@@ -8,8 +8,8 @@ from .string_validators import (
     LengthValidator,
     LowerCaseValidator,
     UpperCaseValidator,
-    Validator,
     NotAcceptedEspecialCharacterValidator,
+    Validator,
 )
 
 
