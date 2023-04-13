@@ -7,6 +7,7 @@ from .string_validators import (
     EspecialCharacterValidator,
     LengthValidator,
     LowerCaseValidator,
+    NotAcceptedEspecialCharacterValidator,
     UpperCaseValidator,
     NotAcceptedEspecialCharacterValidator,
     Validator,
