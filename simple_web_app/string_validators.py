@@ -73,6 +73,7 @@ class UpperCaseValidator(Validator):
             msg = "Passwords must have at least 1 upper case letter!"
             raise NoUpperCaseException(detail=msg)
 
+
 class NotAcceptedEspecialCharacterValidator(Validator):
     def __init__(self):
         self.not_accepted_characters_set = {'/', '^', '~'}
