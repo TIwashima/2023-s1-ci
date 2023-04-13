@@ -77,9 +77,9 @@ class UpperCaseValidator(Validator):
 class NotAcceptedEspecialCharacterValidator(Validator):
     def __init__(self):
         self.not_accepted_characters_set = {'/', '^', '~'}
-    
+
     def validate(self, content):
         content_set = set(content)
-        if not self.not_accepted_characters_set.isdisjoint(not_accepted_characters_set):
+        if not self.not_accepted_characters_set.isdisjoint(content_set):
             msg = "Passwords cannot have any of the following characters: / ^ ~"
             raise EspecialCharacterException(detail=msg)
